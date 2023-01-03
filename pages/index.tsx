@@ -10,7 +10,9 @@ const Home = ({ images }: { images: ImageProps[] }) => {
         <title>NFT Gallery App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Gallery images={images} />
+
       <Footer />
     </div>
   );
