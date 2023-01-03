@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useToast} from "@chakra-ui/react"
+import { useToast } from "@chakra-ui/react";
 
 import { FormControl, FormLabel, Input, Text, Button } from "@chakra-ui/react";
 import { supabase } from "./helper";
@@ -34,7 +34,7 @@ const FormNFT = () => {
 
       if (error) throw error;
       window.location.reload();
-    } catch (error) {
+    } catch (error: any) {
       toast({
         title: `${error.message}`,
         position: "top",

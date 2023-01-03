@@ -16,7 +16,7 @@ const GalleryImage = ({ image }: { image: ImageProps }) => {
 
       if (error) throw error;
       window.location.reload();
-    } catch (error) {
+    } catch (error: any) {
       alert(error.message);
     }
   }
