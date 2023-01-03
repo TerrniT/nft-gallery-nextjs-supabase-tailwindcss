@@ -5,7 +5,7 @@ import Gallery, { ImageProps } from "../components/Gallery";
 
 const Home = ({ images }: { images: ImageProps[] }) => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-black/60 backdrop-blur-lg ">
       <Head>
         <title>NFT Gallery App</title>
         <link rel="icon" href="/favicon.ico" />

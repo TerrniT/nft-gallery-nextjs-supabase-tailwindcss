@@ -46,8 +46,11 @@ const FormNFT = () => {
   }
 
   return (
-    <>
-      <FormControl id="name" isRequired>
+    <div className="flex-1 p-7 ">
+      <Text textAlign={"left"} fontSize="3xl">
+        Share your NFT
+      </Text>
+      <FormControl my={4} id="name" isRequired>
         <FormLabel>Name</FormLabel>
         <Input
           placeholder="Name"
@@ -57,7 +60,7 @@ const FormNFT = () => {
         />
       </FormControl>
 
-      <FormControl id="username" isRequired>
+      <FormControl my={4} id="username">
         <FormLabel>Creator</FormLabel>
         <Input
           placeholder="Your nickname"
@@ -67,8 +70,8 @@ const FormNFT = () => {
         />
       </FormControl>
 
-      <FormControl id="href" isRequired>
-        <FormLabel>Link to your opensea </FormLabel>
+      <FormControl my={4} id="href" isRequired>
+        <FormLabel>Link to creator </FormLabel>
         <Input
           placeholder="default: #"
           _placeholder={{ color: "gray.500" }}
@@ -77,7 +80,7 @@ const FormNFT = () => {
         />
       </FormControl>
 
-      <FormControl id="imageSrc" isRequired>
+      <FormControl my={4} id="imageSrc">
         <FormLabel>File link</FormLabel>
         <Input
           placeholder="file url"
@@ -90,7 +93,7 @@ const FormNFT = () => {
       <Button mt={4} onClick={() => createProduct()}>
         Add
       </Button>
-    </>
+    </div>
   );
 };
 
